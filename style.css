@@ -1,0 +1,23 @@
+body{
+    margin: 0px;
+}
+@media screen and (max-width: 1000px) {
+    #header{
+        height: 5vh;
+        background-color: rgb(4, 22, 39);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #logo{
+        height: 5vh;
+    }
+    #map{
+        height: 75vh;
+        border: solid;
+    }
+    #dashboard{
+        height: 15vh;
+        background-color: rgb(4, 22, 39);
+    }    
+}
