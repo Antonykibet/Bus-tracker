@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+</head>
+<body>
+    <h1>Thanks for contributing</h1>
+    <div id="testDiv"></div>
+    <script>
+        navigator.geolocation.watchPosition(success,err)
+        async function success(position){
+            coord = {lat:position.coords.latitude,
+                    lng:position.coords.longitude,
+                    }
+            document.getElementById('testDiv').innerText=JSON.stringify(coord)
+            // await fetch('/update',{
+            //     method:'POST',
+            //     body:JSON.stringify(coord),
+            // })
+            // document.getElementById('testDiv').innerText +='OK'
+        }
+        function err(error){
+            document.getElementById('testDiv').innerText=error            
+        }
+    </script>
+</body>
+</html>
